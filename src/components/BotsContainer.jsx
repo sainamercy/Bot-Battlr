@@ -23,7 +23,7 @@ function BotsContainer({army, setArmy}){
     }
     console.log(army);
 
-    return <div className="h-full overflow-scroll w-8/12">
+    return <div className="h-full overflow-scroll w-8/12 bg-pink-200">
         <h2 className="text-4xl text-teal-800 text-center mt-2">Select your Team !!</h2>
       <div className="flex flex-wrap justify-center">
       {bots.map(bot =>   <BotList key={bot.id} name={bot.name} image={bot.avatar_url} category={bot.bot_class} phrase={bot.catchphrase} damage={bot.damage} health={bot.health} armor={bot.armor} id={bot.id} onBotClick={handleClick}/>)}
