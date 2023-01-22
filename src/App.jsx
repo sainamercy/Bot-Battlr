@@ -5,14 +5,31 @@ import ArmyContainer from './components/ArmyContainer'
 
 function App() {
   const [army, setArmy]=useState([])
+  const [bots, setBots] = useState([])
+
+  function handleDelete(id){
+    const updatedArmy = army.filter(bot=>bot.id !== id)
+    setArmy(updatedArmy)
+  }
+
+  function handleDischarge(id){
+    const updatedArmy = army.filter(bot=>bot.id !== id)
+    setArmy(updatedArmy)
+
+    army.map(bot=>{
+      if(bot.id===id){
+        setBots([bot, ...bots])
+      }
+    })
+  }
   
 
   return (
     <div className='h-screen font-link w-screen'>
      <NavBar/>
      <div className='bg-stone-300 h-full w-full flex'>
-     <BotsContainer army={army} setArmy={setArmy}/>
-     <ArmyContainer army={army}/>
+     <BotsContainer army={army} setArmy={setArmy} bots={bots} setBots={setBots}/>
+     <ArmyContainer army={army} onDelete={handleDelete} onDischarge={handleDischarge}/>
      </div>
     </div>
   )

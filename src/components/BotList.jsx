@@ -1,8 +1,8 @@
 import React from "react";
 
-function BotList({name, category, image, phrase, damage, health, armor, id, onBotClick}){
+function BotList({name, category, image, phrase, damage, health, armor, id, onBotClick, botClass}){
     function handleClick(){
-       onBotClick(id)
+       onBotClick(id, botClass)
     }
  return <div className="flex justify-center p-3 hover:scale-105" onClick={handleClick}>
  <div className="rounded-lg shadow-lg bg-yellow-100 w-60">
