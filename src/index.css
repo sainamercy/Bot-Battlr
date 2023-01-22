@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 
+.font-link {
+  font-family: 'Hanalei Fill', cursive;
+}
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;

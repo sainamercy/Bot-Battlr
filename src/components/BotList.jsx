@@ -1,8 +1,8 @@
 import React from "react";
 
 function BotList({name, category, image, phrase, damage, health, armor }){
- return <div className="flex justify-center p-3 mt-4">
- <div className="rounded-lg shadow-lg bg-lime-100 w-60">
+ return <div className="flex justify-center p-3">
+ <div className="rounded-lg shadow-lg bg-yellow-100 w-60">
    <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
      <img className="rounded-t-lg" src={image} alt={name}/>
    </a>

@@ -6,9 +6,9 @@ function App() {
   
 
   return (
-    <div className='h-screen'>
+    <div className='h-screen font-link'>
      <NavBar/>
-     <div className='bg-stone-900 h-full'>
+     <div className='bg-stone-300 h-full'>
      <BotsContainer/>
      </div>
     </div>
