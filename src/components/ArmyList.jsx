@@ -1,11 +1,11 @@
 import React from "react";
 
-function ArmyList({name, category, image, damage, health, armor, onDelete, onDischarge, id}){
+function ArmyList({name, category, image, damage, health, armor, onDelete, onDischarge, id, botClass}){
     function handleDischarge(){
-        onDischarge(id)
+        onDischarge(id, botClass)
     }
     function handleDelete(){
-        onDelete(id)
+        onDelete(id, botClass)
     }
     return <div className="flex justify-center p-3 hover:scale-105 h-80">
     <div className="rounded-lg shadow-lg bg-yellow-100 w-44">

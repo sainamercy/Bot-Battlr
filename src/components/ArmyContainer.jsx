@@ -22,6 +22,7 @@ function ArmyContainer({ army, onDelete, onDischarge}) {
             id={bot.id}
             onDelete={onDelete}
             onDischarge={onDischarge}
+            botClass={bot.bot_class}
           /> 
         )): <h3 className="text-pink-800 mt-40 text-3xl">No Members yet!</h3>}
       </div>

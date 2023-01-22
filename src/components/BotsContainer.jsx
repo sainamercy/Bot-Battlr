@@ -1,9 +1,8 @@
 import React,{useEffect, useState} from "react";
 import BotList from "./BotList";
 
-function BotsContainer({army, setArmy, bots, setBots}){
-    const [botClasses, setBotClasses] = useState([])
-    
+function BotsContainer({army, setArmy, bots, setBots, botClasses, setBotClasses}){
+  
     useEffect(()=>{
         fetch("https://api.jsonbin.io/v3/b/63cd2c91ace6f33a22c56765")
         .then(res=>res.json())
