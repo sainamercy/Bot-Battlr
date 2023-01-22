@@ -1,7 +1,10 @@
 import React from "react";
 
-function BotList({name, category, image, phrase, damage, health, armor }){
- return <div className="flex justify-center p-3">
+function BotList({name, category, image, phrase, damage, health, armor, id, onBotClick}){
+    function handleClick(){
+       onBotClick(id)
+    }
+ return <div className="flex justify-center p-3 hover:scale-105" onClick={handleClick}>
  <div className="rounded-lg shadow-lg bg-yellow-100 w-60">
    <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
      <img className="rounded-t-lg" src={image} alt={name}/>
