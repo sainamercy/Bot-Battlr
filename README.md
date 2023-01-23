@@ -14,6 +14,8 @@ This is an application that allows users to browse through a list of robots, vie
 
 ## Features
 - On load of the page, the `bots collection` will be displayed.
+### Sort by bot class
+- Select class option from drop-down menu provided on bot colletion section to display bots that belong to the selected class.
 ### Add bot to your army
 - Click on the bot of your choice on the collection list to add a bot to your army upto a maximum of six bots. `NOTE:` Each bot belongs to a specific class, you can only list one bot from each class.
 ### Discharge bot from your army
