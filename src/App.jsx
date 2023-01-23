@@ -27,8 +27,7 @@ function App() {
       }
     })
   }
-  console.log(botClasses);
-  
+ 
 
   return (
     <div className='h-screen font-link w-screen'>
