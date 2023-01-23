@@ -41,7 +41,7 @@ In order for you to use the content on this repo ensure you have the following:
        
 - Change directory to the repo folder:
 
-        cd Bank-of-Flatiron
+        cd Bot-Battlr
 
 - Open it in ``Visual Studio Code``
 
